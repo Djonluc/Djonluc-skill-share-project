@@ -299,11 +299,11 @@ textarea {
   }
 }
 
-/* Add these new styles */
+/* Categories Page Styles */
 .all-categories {
+  padding: 4rem 2rem;
   max-width: 1400px;
-  margin: 4rem auto;
-  padding: 0 2rem;
+  margin: 0 auto;
 }
 
 .page-title {
@@ -315,46 +315,58 @@ textarea {
 
 .categories-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
+  padding: 1rem;
 }
 
 .category-card {
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 12px;
   padding: 2rem;
-  text-align: center;
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid var(--border);
 }
 
 .category-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .category-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  display: block;
+  text-align: center;
 }
 
 .category-services {
   list-style: none;
-  margin: 1rem 0;
   padding: 0;
+  margin: 1.5rem 0;
 }
 
 .category-services li {
-  padding: 0.5rem 0;
+  padding: 0.8rem 0;
   border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.category-services li:last-child {
-  border-bottom: none;
-}
-
-/* Update existing nav styles */
-.nav-links a[href="categories.html"] {
-  color: var(--primary);
+.btn-view {
+  width: 100%;
+  padding: 1rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
   font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn-view:hover {
+  background: #1aa463;
 }
