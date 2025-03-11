@@ -298,3 +298,63 @@ textarea {
     padding: 0.6rem 1.5rem;
   }
 }
+
+/* Add these new styles */
+.all-categories {
+  max-width: 1400px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--dark);
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.category-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+  border: 1px solid var(--border);
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.category-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.category-services {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.category-services li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.category-services li:last-child {
+  border-bottom: none;
+}
+
+/* Update existing nav styles */
+.nav-links a[href="categories.html"] {
+  color: var(--primary);
+  font-weight: 600;
+}
