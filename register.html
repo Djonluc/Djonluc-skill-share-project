@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join SkillConnect</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="nav-container">
+        <a href="#" class="logo">SkillConnect</a>
+      </nav>
+    </header>
+
+    <div class="auth-container">
+      <h2>Create Your Professional Profile</h2>
+      <form class="auth-form" id="registrationForm">
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" placeholder="First Name" required />
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Last Name" required />
+          </div>
+        </div>
+
+        <input type="email" placeholder="Professional Email" required />
+        <input
+          type="tel"
+          placeholder="Phone Number"
+          pattern="[0-9]{10}"
+          required
+        />
+
+        <div class="form-row">
+          <div class="form-group">
+            <select required>
+              <option value="">Select Profession</option>
+              <option>Electrician</option>
+              <option>Plumber</option>
+              <option>Carpenter</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Years of Experience" required />
+          </div>
+        </div>
+
+        <input
+          type="password"
+          placeholder="Create Password (min 8 characters)"
+          required
+        />
+        <input type="password" placeholder="Confirm Password" required />
+
+        <div class="form-group">
+          <textarea
+            placeholder="Brief Professional Bio (max 200 characters)"
+            maxlength="200"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="checkbox-label">
+            <input type="checkbox" required />
+            I agree to the <a href="#">Terms of Service</a> and certify that I
+            am a licensed professional
+          </label>
+        </div>
+
+        <button type="submit">Complete Registration</button>
+      </form>
+    </div>
+  </body>
+</html>
